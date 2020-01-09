@@ -1,0 +1,20 @@
+2020-01-07 15:52:52 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.users_controller' doesn't exist in /home/roshantech/task/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /home/roshantech/task/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users_controlle...', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /home/roshantech/task/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users_controlle...', Array)
+#2 /home/roshantech/task/vendor/cakephp/cakephp/src/ORM/Table.php(555): Cake\Database\Schema\CachedCollection->describe('users_controlle...')
+#3 /home/roshantech/task/vendor/cakephp/cakephp/src/ORM/Table.php(680): Cake\ORM\Table->getSchema()
+#4 /home/roshantech/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /home/roshantech/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/roshantech/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users_controlle...', 'UsersController')
+#7 /home/roshantech/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('UsersController')
+#8 /home/roshantech/task/vendor/cakephp/bake/src/Shell/BakeShell.php(279): Bake\Shell\Task\ModelTask->main('UsersController')
+#9 /home/roshantech/task/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('UsersController', 0)
+#10 /home/roshantech/task/vendor/cakephp/bake/src/Shell/BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 /home/roshantech/task/vendor/cakephp/cakephp/src/Console/Shell.php(518): Bake\Shell\BakeShell->all('UsersController')
+#12 /home/roshantech/task/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 /home/roshantech/task/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /home/roshantech/task/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
